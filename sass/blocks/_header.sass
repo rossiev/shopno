@@ -1,0 +1,73 @@
+.header
+ background-color: #eff0f2
+ opacity: 0.99
+ &-list
+  list-style: none
+  position: absolute
+  z-index: 3
+  &__item
+   border-radius: 2px
+   border: 2px solid #000000
+   padding: 10px 10px
+   font-size: 18px
+   color: #000000
+   opacity: 0.75
+   line-height: 28px
+   letter-spacing: 2.16px
+   &:hover
+    color: #ffffff
+    background-color: #000000
+    cursor: pointer
+  &__link
+   text-decoration: none
+ &-block
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-logo
+  padding-top: 50px
+  padding-bottom: 50px
+  &__link
+   text-decoration: none
+  &__item
+   border: 6px solid #170f1c
+   padding: 14px
+   font-size: 17px
+   color: #000000
+   font-weight: 700
+   letter-spacing: 1.02px
+   text-shadow: 0 0 2px rgba(21, 21, 22, 0.75)
+   &__strong
+    color: #77efe5
+    font-size: 21px
+ &-menu
+  position: relative
+  width: 30px
+  height: 40px
+  &:hover
+   cursor: pointer
+  &__item
+   top: 50%
+   width: 30px
+   height: 4px
+   background-color: #000000
+   position: absolute
+   border-radius: 2px
+   &:before
+    top: 50%
+    content: ''
+    position: absolute
+    width: 30px
+    height: 4px
+    background-color: #000000
+    border-radius: 2px
+    margin-top: 5px
+   &:after
+    top: 50%
+    content: ''
+    position: absolute
+    width: 30px
+    height: 4px
+    background-color: #000000
+    border-radius: 2px
+    margin-top: 12px

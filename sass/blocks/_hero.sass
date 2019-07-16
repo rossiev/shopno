@@ -1,0 +1,58 @@
+.hero
+ background-color: #eff0f2
+ opacity: 0.99
+ &-img
+  position: absolute
+  right: 0
+  bottom: 0
+  &__item
+   filter: hue-rotate(129deg)
+ &-block
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  padding-top: 100px
+  padding-bottom: 150px
+  position: relative
+  &__button
+   margin-top: 150px
+   border-radius: 2px
+   border: 2px solid #000000
+   padding: 20px 48px
+   font-size: 18px
+   opacity: 0.75
+   line-height: 28px
+   letter-spacing: 2.16px
+   &:hover
+    color: #ffffff
+    background-color: #000000
+    cursor: pointer
+ &-title
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  &__item
+   text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24)
+   color: #505050
+   font-size: 45px
+   line-height: 70px
+   letter-spacing: 2.7px
+   text-transform: uppercase
+   font-weight: 700
+   &__strong
+    background-color: #76f4ea
+    padding: 5px
+@media (max-width: 576px)
+ .hero
+  &-block
+   padding-top: 20px
+   padding-bottom: 50px
+   &__button
+    margin-top: 50px
+  &-img
+   display: none
+  &-title
+   &__item
+    font-size: 25px
